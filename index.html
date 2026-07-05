@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>海杉人力资源（嘉兴）有限公司 | 专业人力资源服务</title>
+<meta name="description" content="海杉人力专注劳务外包、劳务派遣、劳动关系转移、代理招聘、全风险劳务外包等一站式人力资源服务。联系电话：17338575299">
+<meta name="keywords" content="海杉人力,劳务外包,劳务派遣,人力资源,嘉兴人力资源,全风险外包,代理招聘">
+<link rel="icon" href="logo.jpg">
+<style>
+/* ===== Reset & Base ===== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",sans-serif;color:#333;line-height:1.7;overflow-x:hidden;background:#fafbfc}
+a{text-decoration:none;color:inherit}
+img{max-width:100%}
+ul{list-style:none}
+
+/* ===== Theme ===== */
+:root{
+  --pri:#0a2472;--pri2:#1a56db;--acc:#06b6d4;--acc2:#e0f2fe;
+  --dark:#0f172a;--gd:#f1f5f9;--w:#fff;--t1:#1e293b;--t2:#64748b;--t3:#94a3b8;
+  --sh:0 4px 6px -1px rgba(0,0,0,0.05),0 2px 4px -2px rgba(0,0,0,0.05);
+  --sh2:0 10px 30px -5px rgba(0,0,0,0.08),0 4px 10px -6px rgba(0,0,0,0.04);
+  --sh3:0 20px 50px -12px rgba(0,0,0,0.12);
+  --rd:16px;--rd2:12px;
+}
+
+/* ===== Container ===== */
+.ct{max-width:1200px;margin:0 auto;padding:0 24px}
+.ct-sm{max-width:900px;margin:0 auto;padding:0 24px}
+
+/* ===== Top Bar ===== */
+.topbar{background:var(--pri);color:var(--w);font-size:0.82rem;padding:8px 0}
+.topbar .ct{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.topbar a{color:var(--acc);font-weight:500}
+.topbar a:hover{text-decoration:underline}
+
+/* ===== Nav ===== */
+.nav{position:sticky;top:0;z-index:999;background:rgba(255,255,255,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,0.04);transition:all 0.3s}
+.nav.scrolled{box-shadow:0 2px 20px rgba(0,0,0,0.06)}
+.nav .ct{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo img{width:42px;height:42px;border-radius:8px;object-fit:cover}
+.logo-txt h2{font-size:1.15rem;color:var(--pri);font-weight:700;letter-spacing:0.5px;line-height:1.2}
+.logo-txt span{font-size:0.65rem;color:var(--t3);letter-spacing:2px;font-weight:500}
+.nav-lks{display:flex;gap:6px;align-items:center}
+.nav-lks a{padding:8px 16px;font-size:0.88rem;color:var(--t1);font-weight:500;border-radius:8px;transition:all 0.25s}
+.nav-lks a:hover{background:var(--gd);color:var(--pri)}
+.nav-lks a.cta{background:var(--pri);color:var(--w)!important;padding:9px 22px;font-weight:600}
+.nav-lks a.cta:hover{background:var(--pri2);transform:translateY(-1px);box-shadow:0 4px 12px rgba(10,36,114,0.3)}
+.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;z-index:1001}
+.ham span{width:24px;height:2.5px;background:var(--dark);border-radius:2px;transition:all 0.3s}
+.ham.ac span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.ham.ac span:nth-child(2){opacity:0}
+.ham.ac span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+
+/* ===== Hero ===== */
+.hero{position:relative;padding:100px 0 80px;overflow:hidden;background:linear-gradient(160deg,#f0f5ff 0%,#eef2ff 30%,#ecfeff 70%,#f0f5ff 100%)}
+.hero::before{content:'';position:absolute;top:-30%;right:-10%;width:700px;height:700px;background:radial-gradient(circle,rgba(26,86,219,0.07) 0%,transparent 70%);border-radius:50%}
+.hero::after{content:'';position:absolute;bottom:-20%;left:-5%;width:500px;height:500px;background:radial-gradient(circle,rgba(6,182,212,0.06) 0%,transparent 70%);border-radius:50%}
+.hero .ct{display:grid;grid-template-columns:1.1fr 1fr;gap:50px;align-items:center;position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(26,86,219,0.08);color:var(--pri2);padding:6px 18px;border-radius:50px;font-size:0.85rem;font-weight:600;margin-bottom:24px}
+.hero-badge::before{content:'';width:8px;height:8px;background:#22c55e;border-radius:50%;animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+.hero h1{font-size:2.9rem;font-weight:800;color:var(--dark);line-height:1.2;margin-bottom:20px;letter-spacing:-0.5px}
+.hero h1 em{font-style:normal;color:var(--pri2);position:relative}
+.hero h1 em::after{content:'';position:absolute;bottom:3px;left:0;right:0;height:10px;background:rgba(26,86,219,0.12);z-index:-1;border-radius:4px}
+.hero p{font-size:1.05rem;color:var(--t2);line-height:1.8;margin-bottom:32px;max-width:500px}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{padding:14px 32px;border-radius:10px;font-size:0.95rem;font-weight:600;cursor:pointer;transition:all 0.3s;display:inline-flex;align-items:center;gap:8px;border:none;letter-spacing:0.3px}
+.btn-pri{background:var(--pri);color:var(--w);box-shadow:0 4px 20px rgba(10,36,114,0.3)}
+.btn-pri:hover{background:var(--pri2);transform:translateY(-2px);box-shadow:0 8px 30px rgba(10,36,114,0.4)}
+.btn-ot{background:var(--w);color:var(--pri);border:2px solid var(--pri)}
+.btn-ot:hover{background:var(--pri);color:var(--w);transform:translateY(-2px)}
+.hero-stats{display:flex;gap:36px;margin-top:36px;padding-top:28px;border-top:1px solid rgba(0,0,0,0.06)}
+.stat h3{font-size:1.8rem;color:var(--pri);font-weight:800}
+.stat p{font-size:0.82rem;color:var(--t2);margin:0}
+.hero-visual{position:relative}
+.hv-card{background:var(--w);border-radius:20px;padding:32px;box-shadow:var(--sh3)}
+.hv-card .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.hv-card .box{aspect-ratio:1.6;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:600}
+.hv-float{position:absolute;background:var(--w);border-radius:12px;padding:14px 18px;box-shadow:var(--sh2);font-weight:600;font-size:0.85rem;display:flex;align-items:center;gap:8px}
+.hv-float.a{top:15px;right:-15px;animation:float 3s ease-in-out infinite}
+.hv-float.b{bottom:25px;left:-15px;animation:float 3s ease-in-out 1.5s infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+/* ===== Sections ===== */
+.sec{padding:90px 0}
+.sec-label{display:inline-flex;align-items:center;gap:8px;color:var(--pri2);font-weight:700;font-size:0.85rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
+.sec-label::before{content:'';width:28px;height:2.5px;background:var(--pri2);border-radius:2px}
+.sec-t{font-size:2.1rem;font-weight:800;color:var(--dark);margin-bottom:14px;letter-spacing:-0.3px}
+.sec-st{color:var(--t2);font-size:1rem;max-width:600px;margin-bottom:44px;line-height:1.7}
+
+/* ===== Services ===== */
+.sv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.sv-card{background:var(--w);border:1px solid rgba(0,0,0,0.05);border-radius:var(--rd);padding:32px 26px;transition:all 0.35s;position:relative;overflow:hidden;cursor:default}
+.sv-card:hover{border-color:rgba(26,86,219,0.2);transform:translateY(-5px);box-shadow:var(--sh3)}
+.sv-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--pri),var(--acc));transform:scaleX(0);transition:transform 0.4s;transform-origin:left}
+.sv-card:hover::after{transform:scaleX(1)}
+.sv-icon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:20px}
+.sv-card h3{font-size:1.1rem;color:var(--dark);margin-bottom:10px;font-weight:700}
+.sv-card p{font-size:0.88rem;color:var(--t2);line-height:1.7}
+.sv-card ul{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px}
+.sv-card li{font-size:0.78rem;color:var(--pri2);background:rgba(26,86,219,0.06);padding:4px 10px;border-radius:20px}
+
+/* ===== Counter ===== */
+.counters{background:var(--pri);padding:60px 0;color:var(--w)}
+.counters .ct{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.counter h3{font-size:2.6rem;font-weight:800;margin-bottom:6px}
+.counter h3 span{color:var(--acc)}
+.counter p{font-size:0.9rem;opacity:0.8}
+
+/* ===== Why Us ===== */
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.why-card{text-align:center;padding:36px 20px;background:var(--w);border-radius:var(--rd2);border:1px solid rgba(0,0,0,0.04);transition:all 0.3s}
+.why-card:hover{transform:translateY(-4px);box-shadow:var(--sh2);border-color:rgba(26,86,219,0.15)}
+.why-ico{font-size:2.4rem;margin-bottom:16px}
+.why-card h4{font-size:1.05rem;color:var(--dark);margin-bottom:8px;font-weight:700}
+.why-card p{font-size:0.85rem;color:var(--t2)}
+
+/* ===== About ===== */
+.about .ct{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.ab-img{position:relative}
+.ab-img img,.ab-img .ph{width:100%;border-radius:20px;box-shadow:var(--sh3)}
+.ab-img .chip{position:absolute;bottom:-15px;right:-15px;background:var(--w);border-radius:14px;padding:18px 22px;box-shadow:var(--sh3);display:flex;align-items:center;gap:10px}
+.ab-img .chip .dot{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--pri),var(--acc));display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:var(--w)}
+.ab-img .chip h4{font-size:0.9rem;color:var(--dark)}
+.ab-img .chip p{font-size:0.78rem;color:var(--t2)}
+.ab-ft{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+.ab-ft div{display:flex;align-items:center;gap:8px;font-size:0.92rem;color:var(--t1)}
+.ab-ft .ck{width:20px;height:20px;background:#dcfce7;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.7rem;color:#16a34a;flex-shrink:0;font-weight:bold}
+
+/* ===== Process ===== */
+.process{background:var(--gd)}
+.ps-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
+.ps-step{text-align:center;position:relative;background:var(--w);border-radius:var(--rd2);padding:32px 18px;transition:all 0.3s}
+.ps-step:hover{transform:translateY(-3px);box-shadow:var(--sh2)}
+.ps-arrow{position:absolute;top:50%;right:-12px;font-size:1.2rem;color:var(--t3);transform:translateY(-50%)}
+.ps-step:last-child .ps-arrow{display:none}
+.ps-num{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--pri),var(--pri2));color:var(--w);font-size:1.2rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
+.ps-step h4{font-size:1rem;color:var(--dark);margin-bottom:6px;font-weight:700}
+.ps-step p{font-size:0.82rem;color:var(--t2)}
+
+/* ===== Cases ===== */
+.cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.case-card{background:var(--w);border-radius:var(--rd);overflow:hidden;border:1px solid rgba(0,0,0,0.05);transition:all 0.3s}
+.case-card:hover{transform:translateY(-4px);box-shadow:var(--sh3)}
+.case-tag{background:linear-gradient(135deg,var(--pri),var(--pri2));color:var(--w);padding:32px 24px;position:relative}
+.case-tag .icon{font-size:2.4rem;margin-bottom:8px}
+.case-tag h4{font-size:1.05rem;font-weight:700}
+.case-body{padding:20px 24px}
+.case-body p{font-size:0.85rem;color:var(--t2);line-height:1.7;margin-bottom:12px}
+.case-num{font-size:1.6rem;font-weight:800;color:var(--pri);margin-bottom:2px}
+.case-label{font-size:0.78rem;color:var(--t3)}
+
+/* ===== Testimonials ===== */
+.testimonials{background:var(--w)}
+.tm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tm-card{background:var(--gd);border-radius:var(--rd2);padding:28px;position:relative}
+.tm-card::before{content:'"';position:absolute;top:10px;left:18px;font-size:3.5rem;color:rgba(26,86,219,0.08);font-family:Georgia,serif;line-height:1}
+.tm-card p{font-size:0.9rem;color:var(--t1);line-height:1.8;margin-bottom:16px;position:relative;z-index:1}
+.tm-author{display:flex;align-items:center;gap:10px}
+.tm-author .av{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--pri),var(--acc));display:flex;align-items:center;justify-content:center;color:var(--w);font-weight:700;font-size:0.85rem}
+.tm-author h5{font-size:0.88rem;color:var(--dark)}
+.tm-author span{font-size:0.75rem;color:var(--t3)}
+
+/* ===== FAQ ===== */
+.faq-item{border-bottom:1px solid rgba(0,0,0,0.06);padding:18px 0;cursor:pointer}
+.faq-q{display:flex;justify-content:space-between;align-items:center;font-weight:600;color:var(--dark);font-size:0.98rem;gap:16px}
+.faq-q .arw{transition:transform 0.3s;font-size:1.2rem;color:var(--t3);flex-shrink:0}
+.faq-q.open .arw{transform:rotate(180deg);color:var(--pri2)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height 0.35s ease,padding 0.35s ease;font-size:0.9rem;color:var(--t2);line-height:1.8}
+.faq-a.show{max-height:300px;padding-top:12px}
+
+/* ===== Qualifications ===== */
+.zz-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.zz-card{position:relative;border-radius:var(--rd);overflow:hidden;cursor:pointer;border:1px solid rgba(0,0,0,0.06);transition:all 0.3s;background:var(--w)}
+.zz-card:hover{transform:translateY(-4px);box-shadow:var(--sh3)}
+.zz-card img{width:100%;aspect-ratio:1.4;object-fit:cover;display:block}
+.zz-overlay{position:absolute;inset:0;background:rgba(10,36,114,0);display:flex;align-items:center;justify-content:center;transition:all 0.3s}
+.zz-overlay span{color:var(--w);font-size:0.95rem;font-weight:600;opacity:0;transform:translateY(8px);transition:all 0.3s}
+.zz-card:hover .zz-overlay{background:rgba(10,36,114,0.6)}
+.zz-card:hover .zz-overlay span{opacity:1;transform:translateY(0)}
+.zz-card p{text-align:center;padding:14px;font-weight:600;font-size:0.9rem;color:var(--dark);background:var(--w)}
+/* Lightbox */
+.lightbox{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.9);align-items:center;justify-content:center;cursor:pointer}
+.lightbox.show{display:flex}
+.lightbox img{max-width:90vw;max-height:90vh;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,0.5)}
+.lb-close{position:fixed;top:24px;right:32px;color:var(--w);font-size:2rem;cursor:pointer;z-index:10000;transition:opacity 0.3s}
+.lb-close:hover{opacity:0.7}
+
+/* ===== Contact ===== */
+.contact{background:linear-gradient(160deg,#0f172a 0%,#1e293b 100%);color:var(--w);position:relative;overflow:hidden}
+.contact::before{content:'';position:absolute;top:0;right:0;width:400px;height:400px;background:radial-gradient(circle,rgba(26,86,219,0.15) 0%,transparent 70%);border-radius:50%}
+.contact .ct{position:relative;z-index:1}
+.contact .sec-label{color:var(--acc)}
+.contact .sec-label::before{background:var(--acc)}
+.contact .sec-t{color:var(--w)}
+.contact .sec-st{color:rgba(255,255,255,0.5)}
+.cn-grid{display:grid;grid-template-columns:1fr 1fr 0.8fr;gap:32px;margin-top:44px}
+.cn-info h3{font-size:1.15rem;margin-bottom:22px;color:var(--acc)}
+.cn-item{display:flex;gap:14px;margin-bottom:20px;align-items:flex-start}
+.cn-ico{width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.cn-item h4{font-size:0.85rem;margin-bottom:2px;color:rgba(255,255,255,0.5)}
+.cn-item p,.cn-item a{font-size:0.93rem;color:rgba(255,255,255,0.85)}
+.cn-item a:hover{color:var(--acc)}
+.cn-form{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--rd2);padding:28px}
+.cn-form h4{font-size:1.05rem;margin-bottom:18px}
+.cn-form input,.cn-form textarea{width:100%;padding:12px 14px;margin-bottom:12px;border:1px solid rgba(255,255,255,0.12);border-radius:8px;background:rgba(255,255,255,0.05);color:var(--w);font-size:0.9rem;font-family:inherit;outline:none;transition:border 0.3s}
+.cn-form input:focus,.cn-form textarea:focus{border-color:var(--acc)}
+.cn-form textarea{resize:vertical;min-height:80px}
+.cn-form .btn-submit{width:100%;padding:13px;background:var(--acc);color:var(--dark);border:none;border-radius:8px;font-size:0.95rem;font-weight:700;cursor:pointer;transition:all 0.3s}
+.cn-form .btn-submit:hover{background:#22d3ee;transform:translateY(-1px)}
+.cn-qr{text-align:center;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--rd2);padding:28px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.cn-qr img{width:140px;height:140px;border-radius:10px;margin-bottom:14px;background:var(--w);padding:6px}
+.cn-qr h4{font-size:0.95rem;margin-bottom:4px}
+.cn-qr p{font-size:0.82rem;color:rgba(255,255,255,0.5)}
+
+/* ===== Partners ===== */
+.partners{background:var(--w);padding:50px 0;border-top:1px solid rgba(0,0,0,0.04)}
+.partners .ct{display:flex;justify-content:center;align-items:center;gap:50px;flex-wrap:wrap}
+.partner-logo{font-size:1.4rem;font-weight:700;color:var(--t3);letter-spacing:1px;opacity:0.5;transition:opacity 0.3s}
+.partner-logo:hover{opacity:0.8}
+
+/* ===== Footer ===== */
+.footer{background:#0a0f1c;color:rgba(255,255,255,0.5);padding:50px 0 20px}
+.footer .ct{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+.ft-brand h3{font-size:1.3rem;color:var(--w);margin-bottom:10px}
+.ft-brand p{font-size:0.85rem;line-height:1.8;margin-bottom:16px}
+.ft-brand .social{display:flex;gap:10px}
+.ft-brand .social a{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;transition:all 0.3s;font-size:0.9rem}
+.ft-brand .social a:hover{background:var(--pri2);color:var(--w)}
+.ft-links h4{color:var(--w);font-size:0.95rem;margin-bottom:16px}
+.ft-links a{display:block;font-size:0.85rem;margin-bottom:10px;color:rgba(255,255,255,0.45);transition:color 0.3s}
+.ft-links a:hover{color:var(--acc)}
+.ft-bottom{border-top:1px solid rgba(255,255,255,0.06);margin-top:36px;padding-top:20px;text-align:center;font-size:0.8rem}
+
+/* ===== Floating ===== */
+.float-btn{position:fixed;bottom:28px;right:28px;z-index:998;display:flex;flex-direction:column;gap:10px}
+.float-btn a{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;box-shadow:var(--sh3);transition:all 0.3s}
+.float-btn a:hover{transform:translateY(-3px)}
+.float-tel{background:#22c55e;color:var(--w);animation:pulse-ring 2s ease-in-out infinite}
+.float-wx{background:var(--pri2);color:var(--w)}
+.float-top{background:var(--w);color:var(--t1)}
+@keyframes pulse-ring{0%{box-shadow:0 0 0 0 rgba(34,197,94,0.4)}70%{box-shadow:0 0 0 15px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}
+
+/* ===== Responsive ===== */
+@media(max-width:1024px){
+  .sv-grid{grid-template-columns:repeat(2,1fr)}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .counters .ct{grid-template-columns:repeat(2,1fr)}
+  .cn-grid{grid-template-columns:1fr 1fr}
+  .footer .ct{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .nav-lks{position:fixed;top:0;right:-100%;width:75%;max-width:300px;height:100vh;background:var(--w);flex-direction:column;padding:90px 28px 30px;gap:4px;box-shadow:-5px 0 20px rgba(0,0,0,0.1);transition:right 0.35s;align-items:stretch}
+  .nav-lks.ac{right:0}
+  .nav-lks a{padding:12px 16px;font-size:0.95rem}
+  .ham{display:flex}
+  .hero .ct{grid-template-columns:1fr;gap:36px}
+  .hero h1{font-size:2rem}
+  .hero-stats{gap:20px;flex-wrap:wrap}
+  .sv-grid,.why-grid{grid-template-columns:1fr}
+  .about .ct{grid-template-columns:1fr}
+  .ps-steps{grid-template-columns:1fr 1fr}
+  .ps-arrow{display:none}
+  .cases-grid,.tm-grid{grid-template-columns:1fr}
+  .cn-grid{grid-template-columns:1fr}
+  .footer .ct{grid-template-columns:1fr}
+  .sec{padding:60px 0}
+  .hero{padding:70px 0 50px}
+  .sec-t{font-size:1.6rem}
+  .topbar .ct{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== Top Bar ===== -->
+<div class="topbar">
+  <div class="ct">
+    <span>📍 浙江省嘉兴市桐乡市梧桐街道振兴中路49-38号</span>
+    <span>📞 咨询热线：<a href="tel:17338575299">17338575299</a> | ✉️ <a href="mailto:shao15068355299@qq.com">shao15068355299@qq.com</a></span>
+  </div>
+</div>
+
+<!-- ===== Nav ===== -->
+<nav class="nav" id="nav">
+  <div class="ct">
+    <a href="#" class="logo">
+      <img src="logo.jpg" alt="海杉人力">
+      <div class="logo-txt">
+        <h2>海杉人力</h2>
+        <span>HAISHAN HR</span>
+      </div>
+    </a>
+    <div class="nav-lks" id="navLks">
+      <a href="#home">首页</a>
+      <a href="#services">服务项目</a>
+      <a href="#about">关于我们</a>
+      <a href="#cases">合作案例</a>
+      <a href="#faq">常见问题</a>
+      <a href="#zizhi">资质证书</a>
+      <a href="#contact" class="cta">免费咨询</a>
+    </div>
+    <div class="ham" id="ham" onclick="document.getElementById('navLks').classList.toggle('ac');this.classList.toggle('ac')">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="home">
+  <div class="ct">
+    <div>
+      <div class="hero-badge">海杉人力 · 正在为您服务</div>
+      <h1>让企业<em>用工无忧</em>，专注人力资源一站式解决方案</h1>
+      <p>海杉人力资源（嘉兴）有限公司深耕劳务外包、劳务派遣、劳动关系转移等领域，以<strong>全风险外包</strong>为核心优势，助力企业降本增效、合规用工、轻装上阵。</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-pri">📞 获取专属方案</a>
+        <a href="#services" class="btn btn-ot">了解全部服务 →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><h3 data-count="200">200+</h3><p>合作企业</p></div>
+        <div class="stat"><h3 data-count="8000">8000+</h3><p>累计服务人次</p></div>
+        <div class="stat"><h3>100%</h3><p>合规保障率</p></div>
+        <div class="stat"><h3>24h</h3><p>需求响应</p></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hv-card">
+        <div class="grid">
+          <div class="box" style="background:linear-gradient(135deg,#e0e7ff,#c7d2fe)">👥 劳务派遣</div>
+          <div class="box" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe)">📋 全风险外包</div>
+          <div class="box" style="background:linear-gradient(135deg,#cffafe,#a5f3fc)">🔄 关系转移</div>
+          <div class="box" style="background:linear-gradient(135deg,#dcfce7,#bbf7d0)">🎯 代理招聘</div>
+        </div>
+      </div>
+      <div class="hv-float a">✅ 合规 · 专业 · 省心</div>
+      <div class="hv-float b">🏆 长三角优质服务商</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Services ===== -->
+<section class="sec" id="services">
+  <div class="ct">
+    <div class="sec-label">核心业务</div>
+    <h2 class="sec-t">一站式人力资源解决方案</h2>
+    <p class="sec-st">覆盖企业用工全场景，从招聘到管理，从薪酬到风控，我们提供端到端的专业人力资源外包服务。</p>
+    <div class="sv-grid">
+      <div class="sv-card">
+        <div class="sv-icon" style="background:#dbeafe;color:#1d4ed8">📋</div>
+        <h3>全风险劳务外包</h3>
+        <p>承接企业非核心业务全流程外包，人员管理、薪酬发放、社保缴纳、工伤风险由我方承担，企业只享成果不担风险。</p>
+        <ul><li>用工风险转移</li><li>成本可控</li><li>管理省心</li></ul>
+      </div>
+      <div class="sv-card">
+        <div class="sv-icon" style="background:#d1fae5;color:#059669">👥</div>
+        <h3>劳务派遣</h3>
+        <p>根据企业需求快速匹配合适人才，劳动关系归属我司，企业灵活用工无后顾之忧，特别适合季节性、项目性用工需求。</p>
+        <ul><li>快速匹配</li><li>灵活用工</li><li>法律合规</li></ul>
+      </div>
+      <div class="sv-card">
+        <div class="sv-icon" style="background:#fee2e2;color:#dc2626">🔄</div>
+        <h3>劳动关系转移</h3>
+        <p>为企业提供员工劳动关系整体转移服务，妥善处理劳动合同变更、社保接续、工龄延续等，确保人员平稳过渡零纠纷。</p>
+        <ul><li>社保接续</li><li>工龄延续</li><li>零纠纷</li></ul>
+      </div>
+      <div class="sv-card">
+        <div class="sv-icon" style="background:#fff7ed;color:#ea580c">🎯</div>
+        <h3>代理招聘</h3>
+        <p>依托丰富行业人才库和多元招聘渠道，为企业精准筛选面试推荐人才，快速解决用人需求，降低招聘成本。</p>
+        <ul><li>人才库匹配</li><li>快速到岗</li><li>费用合理</li></ul>
+      </div>
+      <div class="sv-card">
+        <div class="sv-icon" style="background:#ede9fe;color:#7c3aed">📊</div>
+        <h3>薪酬社保代管</h3>
+        <p>提供薪酬计算、个税申报、五险一金代缴等一站式薪酬管理，确保数据准确、操作合规、高效省心。</p>
+        <ul><li>薪酬核算</li><li>个税申报</li><li>社保代缴</li></ul>
+      </div>
+      <div class="sv-card">
+        <div class="sv-icon" style="background:#e0f2fe;color:#0284c7">⚖️</div>
+        <h3>用工风险咨询</h3>
+        <p>为企业提供劳动法律法规咨询、用工风险评估、劳动争议处理指导，帮助规避用工法律风险，建立合规用工体系。</p>
+        <ul><li>法务咨询</li><li>风险评估</li><li>争议处理</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Counters ===== -->
+<section class="counters">
+  <div class="ct">
+    <div class="counter"><h3><span>200</span>+</h3><p>合作企业客户</p></div>
+    <div class="counter"><h3><span>8000</span>+</h3><p>累计输送人才</p></div>
+    <div class="counter"><h3><span>5</span>年+</h3><p>行业深耕经验</p></div>
+    <div class="counter"><h3><span>100</span>%</h3><p>客户满意度承诺</p></div>
+  </div>
+</section>
+
+<!-- ===== Why Us ===== -->
+<section class="sec" style="background:#f8fafc">
+  <div class="ct">
+    <div class="sec-label">为什么选择我们</div>
+    <h2 class="sec-t">海杉人力的核心优势</h2>
+    <p class="sec-st">以专业能力为企业创造价值，用真诚服务赢得信赖，四大优势让您选择无忧。</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-ico">🛡️</div>
+        <h4>全风险覆盖</h4>
+        <p>用工风险、工伤风险、法律风险由我方全权承担，企业安心经营零顾虑。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-ico">⚡</div>
+        <h4>极速响应</h4>
+        <p>24小时内响应需求，48小时提供方案，紧急用工7天内人员到岗。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-ico">👨‍💼</div>
+        <h4>专家团队</h4>
+        <p>核心团队5年以上行业经验，深谙劳动法规政策，服务流程标准化。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-ico">💰</div>
+        <h4>降本增效</h4>
+        <p>优化用工结构，降低企业15%-30%综合人力成本，提升管理效率。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== About ===== -->
+<section class="sec about" id="about">
+  <div class="ct">
+    <div class="ab-img">
+      <div class="ph" style="background:linear-gradient(135deg,#e0e7ff,#cffafe);height:360px;display:flex;align-items:center;justify-content:center;font-size:4rem;border-radius:20px">🏢</div>
+      <div class="chip">
+        <div class="dot">✓</div>
+        <div><h4>正规资质</h4><p>人力资源服务许可</p></div>
+      </div>
+    </div>
+    <div>
+      <div class="sec-label">关于我们</div>
+      <h2 class="sec-t">海杉人力资源（嘉兴）有限公司</h2>
+      <p style="color:var(--t2);line-height:1.9;margin-bottom:16px">公司扎根浙江嘉兴，服务辐射长三角地区。我们专注于为企业提供全方位的人力资源外包服务，涵盖<strong>劳务派遣、全风险外包、劳动关系转移、代理招聘</strong>等核心业务。</p>
+      <p style="color:var(--t2);line-height:1.9;margin-bottom:20px">秉承<strong>"专业、诚信、高效、共赢"</strong>的服务理念，海杉人力致力于成为企业最值得信赖的人力资源合作伙伴。我们深谙劳动法规政策，以合规为前提，为企业量身定制用工解决方案。</p>
+      <div class="ab-ft">
+        <div><span class="ck">✓</span>全风险劳务外包</div>
+        <div><span class="ck">✓</span>合规用工保障</div>
+        <div><span class="ck">✓</span>劳动关系管理</div>
+        <div><span class="ck">✓</span>薪酬社保代管</div>
+        <div><span class="ck">✓</span>代理招聘服务</div>
+        <div><span class="ck">✓</span>劳动法务咨询</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Process ===== -->
+<section class="sec process">
+  <div class="ct">
+    <div class="sec-label">合作流程</div>
+    <h2 class="sec-t">简单四步，轻松合作</h2>
+    <p class="sec-st">标准化服务流程，从需求沟通到持续服务，让合作变得简单高效。</p>
+    <div class="ps-steps">
+      <div class="ps-step">
+        <div class="ps-num">01</div>
+        <h4>需求沟通</h4>
+        <p>专业顾问一对一沟通，了解企业用工需求、岗位要求、预算及期望</p>
+        <div class="ps-arrow">→</div>
+      </div>
+      <div class="ps-step">
+        <div class="ps-num">02</div>
+        <h4>方案定制</h4>
+        <p>量身定制用工解决方案与合作协议，明确权责利与服务标准</p>
+        <div class="ps-arrow">→</div>
+      </div>
+      <div class="ps-step">
+        <div class="ps-num">03</div>
+        <h4>签约执行</h4>
+        <p>签订正式合同，快速组建团队、启动人员招聘与派驻管理</p>
+        <div class="ps-arrow">→</div>
+      </div>
+      <div class="ps-step">
+        <div class="ps-num">04</div>
+        <h4>持续服务</h4>
+        <p>专属客服定期回访，持续优化方案，及时响应新需求</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Cases ===== -->
+<section class="sec" id="cases">
+  <div class="ct">
+    <div class="sec-label">合作案例</div>
+    <h2 class="sec-t">他们选择了海杉</h2>
+    <p class="sec-st">不同行业、不同规模的企业，都在享受海杉的专业人力资源服务。</p>
+    <div class="cases-grid">
+      <div class="case-card">
+        <div class="case-tag"><div class="icon">🏭</div><h4>制造业企业</h4></div>
+        <div class="case-body">
+          <p>为某新材料制造企业提供<strong>全风险劳务外包</strong>服务，涵盖生产线操作工150+人。</p>
+          <div class="case-num">↓23%</div>
+          <div class="case-label">综合用工成本降低</div>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-tag" style="background:linear-gradient(135deg,#059669,#10b981)"><div class="icon">🏗️</div><h4>建筑工程项目</h4></div>
+        <div class="case-body">
+          <p>为某大型基建项目提供<strong>劳务派遣</strong>服务，按工期灵活调配施工人员200+人次。</p>
+          <div class="case-num">100%</div>
+          <div class="case-label">项目按时交付率</div>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-tag" style="background:linear-gradient(135deg,#7c3aed,#a855f7)"><div class="icon">🏢</div><h4>物流仓储企业</h4></div>
+        <div class="case-body">
+          <p>为大型物流园区提供<strong>劳动关系转移+派遣</strong>组合方案，平稳承接原有员工80+人。</p>
+          <div class="case-num">0</div>
+          <div class="case-label">劳动关系纠纷</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Testimonials ===== -->
+<section class="sec testimonials">
+  <div class="ct">
+    <div class="sec-label">客户评价</div>
+    <h2 class="sec-t">听听客户怎么说</h2>
+    <p class="sec-st">真实反馈，见证海杉人力的专业与用心。</p>
+    <div class="tm-grid">
+      <div class="tm-card">
+        <p>把产线用工全部外包给海杉之后，我们管理成本大幅下降，也不用再操心工伤和劳动纠纷，真正做到了省心省力。</p>
+        <div class="tm-author"><div class="av">李</div><div><h5>李总</h5><span>某制造企业 · 总经理</span></div></div>
+      </div>
+      <div class="tm-card">
+        <p>合作三年了，从最初的代理招聘到现在的全风险外包，海杉的响应速度和专业度一直在线，是我们最信赖的合作伙伴。</p>
+        <div class="tm-author"><div class="av">王</div><div><h5>王经理</h5><span>某物流公司 · HR总监</span></div></div>
+      </div>
+      <div class="tm-card">
+        <p>旺季用工需求波动大，海杉的灵活派遣方案帮我们解决了大问题。人员到岗快、素质好，而且完全合规。</p>
+        <div class="tm-author"><div class="av">张</div><div><h5>张总</h5><span>某建筑企业 · 项目负责人</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="sec" style="background:#f8fafc" id="faq">
+  <div class="ct-sm">
+    <div class="sec-label">常见问题</div>
+    <h2 class="sec-t">您可能关心的问题</h2>
+    <p class="sec-st">快速解答，消除顾虑。更多问题欢迎直接联系我们。</p>
+    <div class="faq-item" onclick="this.querySelector('.faq-q').classList.toggle('open');this.querySelector('.faq-a').classList.toggle('show')">
+      <div class="faq-q">什么是全风险劳务外包？ <span class="arw">▼</span></div>
+      <div class="faq-a">全风险劳务外包是指企业将非核心业务的人力资源管理整体外包给我们，包括人员招聘、劳动合同签订、薪酬发放、社保缴纳、工伤处理等全部环节。用工过程中的所有风险（劳动纠纷、工伤事故等）由我方承担，企业只享受用工成果。</div>
+    </div>
+    <div class="faq-item" onclick="this.querySelector('.faq-q').classList.toggle('open');this.querySelector('.faq-a').classList.toggle('show')">
+      <div class="faq-q">劳务派遣和劳务外包有什么区别？ <span class="arw">▼</span></div>
+      <div class="faq-a">劳务派遣是"派人"，人员到我方但到您那里工作，适用临时性、辅助性岗位；劳务外包是"包事"，我们把整个业务包下来自己做，您只需验收成果。外包比派遣更灵活，不受10%比例限制，风险转移也更彻底。</div>
+    </div>
+    <div class="faq-item" onclick="this.querySelector('.faq-q').classList.toggle('open');this.querySelector('.faq-a').classList.toggle('show')">
+      <div class="faq-q">合作流程大概需要多久？ <span class="arw">▼</span></div>
+      <div class="faq-a">标准流程：需求沟通1-3天→方案定制2-5天→合同签订1-3天→人员到岗7-15天。紧急用工可加急处理，最快3天内人员到位。</div>
+    </div>
+    <div class="faq-item" onclick="this.querySelector('.faq-q').classList.toggle('open');this.querySelector('.faq-a').classList.toggle('show')">
+      <div class="faq-q">服务区域覆盖哪些地方？ <span class="arw">▼</span></div>
+      <div class="faq-a">公司总部在嘉兴桐乡，服务辐射整个长三角地区，包括嘉兴、杭州、湖州、绍兴、宁波、上海、苏州等地。其他区域也可根据项目需求协商覆盖。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Qualifications ===== -->
+<section class="sec" id="zizhi">
+  <div class="ct">
+    <div class="sec-label">资质证书</div>
+    <h2 class="sec-t">正规资质 · 合规经营</h2>
+    <p class="sec-st">海杉人力持证经营，所有资质齐全，让合作企业放心托付。</p>
+    <div class="zz-grid">
+      <div class="zz-card" onclick="openLightbox('zizhi-1.jpg')">
+        <img src="zizhi-1.jpg" alt="营业执照" loading="lazy">
+        <div class="zz-overlay"><span>🔍 点击查看大图</span></div>
+        <p>营业执照</p>
+      </div>
+      <div class="zz-card" onclick="openLightbox('zizhi-2.jpg')">
+        <img src="zizhi-2.jpg" alt="资质证书" loading="lazy">
+        <div class="zz-overlay"><span>🔍 点击查看大图</span></div>
+        <p>人力资源服务许可证</p>
+      </div>
+      <div class="zz-card" onclick="openLightbox('zizhi-3.jpg')">
+        <img src="zizhi-3.jpg" alt="资质证书" loading="lazy">
+        <div class="zz-overlay"><span>🔍 点击查看大图</span></div>
+        <p>劳务派遣经营许可证</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="lb-close">✕</span>
+  <img id="lb-img" src="" alt="资质证书大图">
+</div>
+
+<!-- ===== Contact ===== -->
+<section class="sec contact" id="contact">
+  <div class="ct">
+    <div class="sec-label">联系我们</div>
+    <h2 class="sec-t">立即咨询，获取专属用工方案</h2>
+    <p class="sec-st">专业顾问一对一服务，免费为您评估需求、定制方案。</p>
+    <div class="cn-grid">
+      <div class="cn-info">
+        <h3>📋 联系方式</h3>
+        <div class="cn-item">
+          <div class="cn-ico">📞</div>
+          <div><h4>联系电话</h4><p><a href="tel:17338575299">17338575299</a></p></div>
+        </div>
+        <div class="cn-item">
+          <div class="cn-ico">📧</div>
+          <div><h4>电子邮箱</h4><p><a href="mailto:shao15068355299@qq.com">shao15068355299@qq.com</a></p></div>
+        </div>
+        <div class="cn-item">
+          <div class="cn-ico">📍</div>
+          <div><h4>公司地址</h4><p>浙江省嘉兴市桐乡市梧桐街道振兴中路49-38号</p></div>
+        </div>
+        <div class="cn-item">
+          <div class="cn-ico">🕐</div>
+          <div><h4>工作时间</h4><p>周一至周五 8:30 - 17:30（节假日可预约）</p></div>
+        </div>
+      </div>
+      <div class="cn-form" id="contactForm">
+        <h4>💬 在线留言</h4>
+        <form onsubmit="handleSubmit(event)">
+          <input type="text" placeholder="您的姓名 / 公司名称" required>
+          <input type="tel" placeholder="联系电话" required>
+          <textarea placeholder="请描述您的用工需求..." required></textarea>
+          <button type="submit" class="btn-submit">提交需求 →</button>
+        </form>
+      </div>
+      <div class="cn-qr">
+        <img src="qrcode.png" alt="微信二维码">
+        <h4>📱 微信扫码咨询</h4>
+        <p>手机同号：17338575299</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="ct">
+    <div class="ft-brand">
+      <h3>海杉人力资源</h3>
+      <p>海杉人力资源（嘉兴）有限公司，专注劳务外包、劳务派遣、劳动关系转移、代理招聘等一站式人力资源服务。以专业、诚信、高效、共赢的理念服务每一位客户。</p>
+    </div>
+    <div class="ft-links">
+      <h4>服务项目</h4>
+      <a href="#services">全风险劳务外包</a>
+      <a href="#services">劳务派遣</a>
+      <a href="#services">劳动关系转移</a>
+      <a href="#services">代理招聘</a>
+      <a href="#services">薪酬社保代管</a>
+    </div>
+    <div class="ft-links">
+      <h4>快速导航</h4>
+      <a href="#home">网站首页</a>
+      <a href="#about">关于我们</a>
+      <a href="#cases">合作案例</a>
+      <a href="#faq">常见问题</a>
+      <a href="#contact">联系我们</a>
+    </div>
+    <div class="ft-links">
+      <h4>联系方式</h4>
+      <a href="tel:17338575299">📞 17338575299</a>
+      <a href="mailto:shao15068355299@qq.com">✉️ 发送邮件</a>
+      <p style="font-size:0.82rem;color:rgba(255,255,255,0.4);margin-top:8px">📍 桐乡市梧桐街道<br>振兴中路49-38号</p>
+    </div>
+  </div>
+  <div class="ft-bottom ct">
+    <p>&copy; 2026 海杉人力资源（嘉兴）有限公司 版权所有 | 浙ICP备XXXXXXXX号</p>
+  </div>
+</footer>
+
+<!-- ===== Floating Buttons ===== -->
+<div class="float-btn">
+  <a href="tel:17338575299" class="float-tel" title="电话咨询">📞</a>
+  <a href="#contact" class="float-wx" title="微信咨询">💬</a>
+  <a href="#home" class="float-top" title="回到顶部">↑</a>
+</div>
+
+<script>
+// Nav scroll
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('scrolled',window.scrollY>50)
+})
+
+// Smooth scroll + close mobile nav
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    e.preventDefault()
+    const t=document.querySelector(a.getAttribute('href'))
+    if(t){t.scrollIntoView({behavior:'smooth'});document.getElementById('navLks').classList.remove('ac');document.getElementById('ham').classList.remove('ac')}
+  })
+})
+
+// Form submit
+function handleSubmit(e){
+  e.preventDefault()
+  alert('感谢您的留言！我们将在24小时内与您联系。\n\n您也可以直接拨打 17338575299 咨询。')
+  e.target.reset()
+}
+
+// Counter animation
+function animateCounters(){
+  document.querySelectorAll('.counter span').forEach(el=>{
+    const target=parseInt(el.textContent.replace(/[^0-9]/g,''))
+    if(!target||el.dataset.done)return
+    el.dataset.done=1
+    let cur=0
+    const step=Math.ceil(target/60)
+    const timer=setInterval(()=>{
+      cur+=step
+      if(cur>=target){cur=target;clearInterval(timer)}
+      el.textContent=cur
+    },30)
+  })
+}
+
+// Observe counters section
+const obs=new IntersectionObserver((e)=>{if(e[0].isIntersecting){animateCounters();obs.disconnect()}},{threshold:0.5})
+document.querySelector('.counters')&&obs.observe(document.querySelector('.counters'))
+
+// Lightbox
+function openLightbox(src){
+  document.getElementById('lb-img').src=src
+  document.getElementById('lightbox').classList.add('show')
+  document.body.style.overflow='hidden'
+}
+function closeLightbox(){
+  document.getElementById('lightbox').classList.remove('show')
+  document.body.style.overflow=''
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox()})
+</script>
+
+</body>
+</html>
