@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shaoyongsheng.github.io/hsishan-hr/sitemap.xml
